@@ -1,0 +1,5 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  @include padding-4-sides($vertical-space-full-height, $horizontal-space-full-width)
+}

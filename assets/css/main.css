@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.section {
+  padding: 2rem 8rem;
+}
+
+.h-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 60%;
+  padding-top: 1rem;
+}
+
+.aside-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .aside-container {
+    width: 38%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+
+.footer {
+  padding: 2rem 8rem;
+}
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  border-radius: 8px;
+  width: 30%;
+}
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.form__text {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+.form__text--link {
+  text-decoration: none;
+  color: #000000;
+  margin-top: 3px;
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  width: 460px;
+  height: 2.5rem;
+  text-align: center;
+}
+.button--green {
+  background-color: #67C770;
+  color: #ffffff;
+  padding-top: 8px;
+  margin-top: 20px;
+}
+.button--google {
+  display: flex;
+  align-items: center;
+  border: 2px solid #D9D9D9;
+  margin: 0;
+}
+.button--google--logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 25px;
+  margin-left: 100px;
+}
+.button--google--text {
+  background-color: #ffffff;
+  color: #000000;
+  height: auto;
+  margin-right: 100px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+}
+.logo__img {
+  height: 100%;
+  margin-right: 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.logo__title {
+  font-weight: 700;
+  padding-top: 22px;
+}
+
+.logo--small {
+  height: 3.5rem;
+}
+
+.h-post {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+}
+.h-post:not(:first-of-type) {
+  padding-top: 1rem;
+}
+.h-post__content {
+  display: flex;
+  flex-direction: column;
+}
+.h-post__img {
+  height: 100%;
+  border-radius: 8px;
+  margin-right: 1rem;
+  width: 8.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.h-post__date {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.v-post {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+}
+@media (min-width: 700px) {
+  .v-post {
+    width: 60%;
+  }
+}
+.v-post__date {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.v-post__img {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.v-post--small {
+  width: 18rem;
+}
+.v-post--small .v-post__img {
+  height: 8rem;
+}
+
+.post-full-screen {
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 1.5rem 1.5rem;
+}
+.post-full-screen__img {
+  border-radius: 8px;
+  width: 80%;
+}
+
+.categoria {
+  border-radius: 8px;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.categoria__img {
+  height: 100%;
+  margin-left: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.categoria__text {
+  font-size: 2rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: white;
+  font-weight: 700;
+}
+.categoria--html {
+  background-color: #E93E30;
+}
+.categoria--js {
+  background-color: #F7E018;
+}
+.categoria--css {
+  background-color: #299ED5;
+}
+.categoria--react {
+  background-color: #292C33;
+}
+.categoria--vue {
+  background-color: #67C770;
+}
+.categoria--bootstrap {
+  background-color: #563D7C;
+}
+.categoria:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.user {
+  display: flex;
+  margin-top: 0.8rem;
+  flex-direction: row;
+  align-self: baseline;
+  align-items: center;
+  height: 3rem;
+}
+.user__img {
+  border-radius: 50%;
+  height: 100%;
+  margin-right: 1rem;
+}
+.user__text {
+  font-weight: 500;
+}
+.user__date {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.user--small {
+  height: 2rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.btn__login {
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  padding-top: 3px;
+  text-align: center;
+  background-color: #67C770;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn__registro {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #67C770;
+  border-radius: 50px;
+  padding-top: 1px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #67C770;
+  text-decoration: none;
+}
+
+.sus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background-color: #67C770;
+  border-radius: 10px;
+}
+.sus-container--h2 {
+  color: #ffffff;
+}
+
+.suscribirse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.suscribirse__input {
+  width: 600px;
+  height: 2.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+.suscribirse__btn {
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 5px;
+  background-color: #D9D9D9;
+  text-decoration: none;
+  text-align: center;
+}
+.suscribirse__btn--text {
+  margin-top: 7px;
+  font-weight: 700;
+  color: #292C33;
+}
+
+input[type=name],
+input[type=last-name],
+input[type=email],
+input[type=password],
+input[type=r-password] {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+
+html, body {
+  color: #000000;
+}
+
+.section {
+  border-top: solid 1px #292C33;
+  border-bottom: solid 1px #292C33;
+}/*# sourceMappingURL=main.css.map */

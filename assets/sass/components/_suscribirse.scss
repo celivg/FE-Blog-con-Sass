@@ -1,0 +1,48 @@
+.sus-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  
+  background-color: $green;
+  border-radius: 10px;
+
+  &--h2{
+    color: $white;
+  }
+}
+
+.suscribirse{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  &__input{
+    width: 600px;
+    height: 2.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+  }
+
+  &__btn{
+    width: 200px;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: $light-grey;
+    
+    text-decoration: none;
+    text-align: center;
+
+    &--text{
+      margin-top: 7px;
+      font-weight: 700;
+      color: $grey;
+    }
+  }
+
+}
+
